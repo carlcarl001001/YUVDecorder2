@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="decordePath">
+    <item>道通相机</item>  
+    <item>无线相机模组</item>  
+    <item>无线可视相机模组</item> 
+    <item>本地视频</item>  
+    <item>其他</item>  
+    </string-array>
+</resources>

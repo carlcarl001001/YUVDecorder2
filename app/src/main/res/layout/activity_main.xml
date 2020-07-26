@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.demo.yuvdecorder.GL2JNIView
+        android:id="@+id/gLJNIView1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+    </com.demo.yuvdecorder.GL2JNIView>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spDecordePath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tbPause"
+        android:layout_alignTop="@+id/tbPause"
+        android:layout_toRightOf="@+id/tbPause" 
+        android:entries="@array/decordePath"/>
+
+    <ToggleButton
+        android:id="@+id/tbPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tbDecorde"
+        android:text="ToggleButton"
+        android:layout_alignTop="@+id/tbDecorde"
+        android:textOff="Pause"
+        android:textOn="Pause" />
+
+    <ToggleButton
+        android:id="@+id/tbDecorde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gLJNIView1"
+        android:text="ToggleButton"
+        android:textOff="Decorde"
+        android:textOn="Decorde" />
+
+</RelativeLayout>
